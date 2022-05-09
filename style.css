@@ -1,0 +1,68 @@
+body {
+    text-align: center;
+    background-color: rgb(143, 233, 116);
+}
+
+#campo {
+    width: 300px; 
+    height: 300px; 
+    border: 5px solid darkgray;
+    background-color: lightgray;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#campo div {
+    width: 33px;
+    height: 34px;
+    border: 1px solid whitesmoke;
+    cursor: pointer;
+    font-size: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.celula-clicada {
+    background-color: darkgrey;
+}
+/*
+.x1 {
+    color: black;
+}
+
+.x2 {
+    color: yellow;
+}
+
+.x3 {
+    color: red;
+}
+
+.x4 {
+    color: red;
+}
+
+.x5 {
+    color: red;
+}
+
+.x6 {
+    color: red;
+}
+
+.x7 {
+    color: red;
+}
+
+.x8 {
+    color: red;
+}
+*/
+#botao-bandeira {
+    width: 150px;
+    height: 60px;
+    font-size: 16px;
+    cursor: pointer;
+}
