@@ -59,7 +59,6 @@ function set_minas(linha, coluna, mina){
             i -= 1;
         }
     }
-    console.log(local_minas);
 }
 
 function set_campo(quantidade_linha, quantidade_coluna, quantidade_mina){
@@ -107,7 +106,6 @@ function set_bandeira() {
 }
 
 function checar_vitoria(){
-    //celulas_verificadas.length == linhas * colunas - minas_achadas.length
     if(total_celulas == local_minas.length){
         fim_de_jogo = true;
         alert("FIm DE JOGO, Você venceu\nDepois de clicar em ok, o campo vai ser limpo em 3 segundos");
@@ -147,7 +145,6 @@ function clicar_celula(){
         primeira_jogada = true;
         id_primeira = celula.id;
         set_minas(linhas, colunas, minas);
-        console.log("quantidade total de minas: " + local_minas.length);
     }
     if(bandeira_clicada){
         if(celula.innerText == ""){
@@ -159,7 +156,6 @@ function clicar_celula(){
             let x = bandeiras_clicadas.indexOf(celula.id);
             bandeiras_clicadas.splice(x, 1);
         }
-        console.log(bandeiras_clicadas);
         return;
     }
     if(local_minas.includes(celula.id)){
@@ -174,7 +170,6 @@ function clicar_celula(){
     let coluna = parseInt(celula.id[1]);
     checar_mina(linha, coluna);
     checar_vitoria();
-    console.log("ultima celula clicada", celula.id);
 }
 
 function revelar_minas(){
@@ -234,6 +229,5 @@ function checar_mina(linha, coluna){
             }   
         }
     }
-    console.log("total de celulas não clicadas: " + total_celulas);
     total_celulas -= 1;
 }
