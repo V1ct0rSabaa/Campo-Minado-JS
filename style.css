@@ -27,39 +27,7 @@ body {
 .celula-clicada {
     background-color: darkgrey;
 }
-/*
-.x1 {
-    color: black;
-}
 
-.x2 {
-    color: yellow;
-}
-
-.x3 {
-    color: red;
-}
-
-.x4 {
-    color: red;
-}
-
-.x5 {
-    color: red;
-}
-
-.x6 {
-    color: red;
-}
-
-.x7 {
-    color: red;
-}
-
-.x8 {
-    color: red;
-}
-*/
 #botao-bandeira {
     width: 150px;
     height: 60px;
